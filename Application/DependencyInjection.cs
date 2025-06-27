@@ -19,17 +19,17 @@ public static class DependencyInjection
 
             config.UsingRabbitMq((ctx, cfg) =>
             {
-                // cfg.Host(mqConnection["Host"], mqConnection["VirtualHost"], h =>
-                // {
-                //     h.Username(mqConnection["Username"]);
-                //     h.Password(mqConnection["Password"]);
-                // });
-                
-                cfg.Host("160.187.229.170", h =>
+                cfg.Host(mqConnection["Host"], mqConnection["VirtualHost"], h =>
                 {
-                    h.Username("will-e");
-                    h.Password("wille");
+                    h.Username(mqConnection["Username"]);
+                    h.Password(mqConnection["Password"]);
                 });
+                
+                // cfg.Host("160.187.229.170", h =>
+                // {
+                //     h.Username("will-e");
+                //     h.Password("wille");
+                // });
 
                 cfg.ConfigureEndpoints(ctx);
             });

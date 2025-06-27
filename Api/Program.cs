@@ -29,11 +29,11 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    var settingService = scope.ServiceProvider.GetRequiredService<ISystemSettingService>();
-    await settingService.LoadAllSettingsToCacheAsync();
-}
+// using (var scope = app.Services.CreateScope())
+// {
+//     var settingService = scope.ServiceProvider.GetRequiredService<ISystemSettingService>();
+//     await settingService.LoadAllSettingsToCacheAsync();
+// }
 
 app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHangfireDashboard("/hangfire", new DashboardOptions
