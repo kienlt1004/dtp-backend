@@ -94,7 +94,7 @@ This project is licensed under the **MIT License**.
 ## Contact
 For questions or support, contact:
 - [dokkazy](https://github.com/dokkazy)
-- [kh0abug](https://github.com/kh0abug)
+- [kh0adev](https://github.com/kh0adev)
 - [wnosphan](https://github.com/wnosphan)
 - [ya3k](https://github.com/ya3k)
 - [william-le1004](https://github.com/william-le1004)
