@@ -17,6 +17,8 @@ public class CreateCompanyValidator : AbstractValidator<CreateCompanyCommand>
     {
         var repository = companyRepository;
 
+        var x = "string";
+
         RuleFor(x => x.Name)
             .MustAsync(async (name, cancellation) => await repository.ExistsByNameAsync(name))
             .WithMessage("Company with this name already exists.")
